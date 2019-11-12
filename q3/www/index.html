@@ -25,27 +25,23 @@
 <p style="text-align:center;"> Find your people. Engage your customers. Build your brand. Do it all with Fakechimp's Marketing Platform</p>
   <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
   <div class="form-group">
-    <input type="hidden" name="order_json" id="order_json" value="">
     <input type="hidden" name="student_id" id="student_id" value="169008520">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
- 
-  <form class="form-inline">
     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Country</label>
-    <select class="custom-select my-1 mr-sm-2" id="country">
+    <select class="custom-select my-1 mr-sm-2" id="country" name="country">
       <option selected>Choose...</option>
       <option value="1">Canada</option>
       <option value="2">United States</option>
     </select>
     <div class="form-group">
        <label for="description">Description</label>
-       <textarea class="form-control" id="description" rows="4"></textarea>
+       <textarea class="form-control" id="description" rows="4" name="description"></textarea>
      </div>
      <div class="custom-file">
-  <input type="file" class="custom-file-input" id="avatarImage">
-  <label class="custom-file-label" for="customFile">Choose Avatar Image</label>
+   <input type="file" name="avatarImage" id="avatarImage" name=avatarImage>
 </div>
   <button type="submit" class="btn btn-primary formButton">Get Started!</button>
 <p class="termsOfService">By clicking the "Get Started!" button, you are creating a Fakechimp account.</p>
