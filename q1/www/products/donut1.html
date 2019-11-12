@@ -32,11 +32,16 @@
 
 <img src="../img/donut-1.jpg" alt="chocolate sprinkle donuts" class="center" style="width:500px;height:500px;">
 
-<button onclick="clientAddItemToCart({prodName: 'Chocolate Donut', prodDesc: 'Great donut', prodPrice: '25.00', prodQty: '3'});" class="button">Order Now</button>
-
+<button onclick="clientAddItemToCart()" class="button">Order Now</button>
+  
 <p id="buttonclick"></p>
 
-
+ <script>
+function clientAddItemToCart() {
+  document.getElementById("buttonclick") prodName: 'Chocolate Donut', prodDesc: 'Great chocolate donut', prodPrice: '25.00', prodQty: '3';
+}
+</script>
+  
 <div class="footer"> <p> T: 226-999-8282 | E: awesomedonuts@gmail.com | 230 University Ave E </p> </div>
 
 </body>
