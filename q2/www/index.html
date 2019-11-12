@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <script src="js/app.js" async></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+
+<div id="wrapper">
+  <img style="width:120px;" id="color-monkey" src="img/logo-color.png">
+  <img style="width:120px;" id="bw-monkey" src="img/logo-black-white.png">
+
+
+<div class="formwrapper">
+<h1> Get Started With Your Account </h1>
+<p>Find your people. Engage your customers. Build your brand. Do it all with Fakechimp's Marketing Platform</p>
+  <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/registrations" method="post">
+  <div class="form-group">
+    <input type="hidden" name="order_json" id="order_json" value="">
+    <input type="hidden" name="student_id" id="student_id" value="169008520">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="username" class="form-control" id="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label> <a href="#" id="togglelink" onclick="togglepassword()"><i class="fa fa-eye" aria-hidden="true"></i> Show</a>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-primary formButton">Get Started!</button>
+<p class="termsOfService">By clicking the "Get Started!" button, you are creating a Fakechimp account.</p>
+
+  <div class="copyright">
+    <p> ©2001–2019 All Rights Reserved. Fakechimp® is a registered trademark of WLUCP202 Class.</p>
+
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
