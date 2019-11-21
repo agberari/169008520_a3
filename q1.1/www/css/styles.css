@@ -1,0 +1,92 @@
+/*importing the Inconsolata font*/
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap');
+
+
+a {
+  color: black ;
+}
+body {
+  font-family: 'Inconsolata';
+  font-size: 25px;
+  background-color: #ffcec9;
+  padding: 1em 0em 0em 0em;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+}
+h1 {
+  color: white;
+   text-align:center ;
+   font-size: 90px ;
+   text-shadow: -1px 0 #ff4f87, 0 1px #ff4f87, 1px 0 #ff4f87, 0 -1px #ff4f87;
+}
+
+h2 {
+  color: #ff4f87 ;
+  text-align:center;
+  font-size: 45px ;
+  text-decoration: underline;
+}
+p {
+  color: #black ;
+  font-size: 35px;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+ul {
+margin:0;
+padding:0;
+text-align: center;
+list-style:none;
+}
+ul  li {
+padding: 2px 5px;
+}
+.button {
+  background-color: #ff4f87;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 80%;
+   background-color: #ff4f87 ;
+   color: white ;
+   font-size: 12px;
+   text-align: center;
+}
+.footer p {
+  margin: 25px 0 0;
+  padding: 25px;
+}
+.menu {
+  padding-left: 2em;
+  padding-right: 2em;
+}
